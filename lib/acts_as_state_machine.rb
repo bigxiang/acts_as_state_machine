@@ -117,11 +117,11 @@ module ScottBarron                   #:nodoc:
           self.extend(ClassMethods)
           raise NoInitialState unless opts[:initial]
 
-          class_attibute :states
-          class_attibute :initial_state
-          class_attibute :transition_table, {}
-          class_attibute :event_table, {}
-          class_attibute :state_column, opts[:column] || 'state'
+          class_attribute :states
+          class_attribute :initial_state
+          class_attribute :transition_table, {}
+          class_attribute :event_table, {}
+          class_attribute :state_column, opts[:column] || 'state'
 
           self.states = {}
           self.initial_state = opts[:initial]
