@@ -119,9 +119,9 @@ module ScottBarron                   #:nodoc:
 
           class_attribute :states
           class_attribute :initial_state
-          class_attribute :transition_table, {}
-          class_attribute :event_table, {}
-          class_attribute :state_column, opts[:column] || 'state'
+          class_attribute :transition_table
+          class_attribute :event_table
+          class_attribute :state_column
 
           self.states = {}
           self.initial_state = opts[:initial]
